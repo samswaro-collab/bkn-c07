@@ -121,6 +121,35 @@ const BD_DATA = {
   },
 
 
+
+  // Leadership & key contacts (all rendered dynamically)
+  leadership: {
+    ceo:  { name:"Éric Martel",       title:"President & CEO, Bombardier Inc.",       since:"Feb 2020", location:"Montreal, QC" },
+    cfo:  { name:"Bart Demosky",      title:"EVP & CFO, Bombardier Inc.",              since:"Oct 2022", location:"Montreal, QC" },
+    coo:  { name:"Jean-Christophe Gallagher", title:"EVP & Chief Commercial Officer", since:"2019",     location:"Montreal, QC" },
+    vpEng:{ name:"VP Engineering (search LinkedIn)", title:"VP Engineering Operations — Global / Challenger programs", since:"—", location:"Montreal, QC" },
+    vpCert:{ name:"Director, Certification Engineering", title:"FAA/TCCA type cert programs incl. Global 8000 EIS", since:"—", location:"Montreal, QC" },
+    vpTA: { name:"Director, Engineering TA", title:"Senior TA — all engineering divisions incl. Global & Challenger", since:"—", location:"Montreal, QC" }
+  },
+  keyContacts: [
+    { name:"Éric Martel",             title:"President & CEO",                 loc:"Montreal, QC",  badge:"C-Suite",   color:"#c25700",
+      pitch:"EIS of Global 8000 → India scale model. Lead with: 'Gulfstream and Textron use Cyient at scale. Bombardier has the same India cost opportunity on Global 8000 programmes.'" },
+    { name:"Bart Demosky",            title:"EVP & CFO",                       loc:"Montreal, QC",  badge:"Finance",   color:"#0076be",
+      pitch:"Cost-model pitch: India ER&D at 60% cost advantage. '$17.5B backlog needs engineering that scales without CAPEX — that's the Cyient model.'" },
+    { name:"Jean-Christophe Gallagher", title:"EVP & Chief Commercial Officer", loc:"Montreal, QC", badge:"Commercial", color:"#0076be",
+      pitch:"Use as warm intro path to Engineering VP. CCO oversees customer commitments — delivery schedule pressure = need for outsourced cert documentation." },
+    { name:"VP Engineering Operations",  title:"Owns engineering delivery model incl. India strategy", loc:"Montreal, QC", badge:"Primary Target", color:"#1b5e20",
+      pitch:"Strategic decision-maker for offshore engineering partnerships. Entry point for BIETC Hyderabad proposal. Ask for intro via Bombardier Bangalore office contacts. Search: 'Bombardier VP Engineering Operations' on LinkedIn." },
+    { name:"Director, Certification Engineering", title:"Leads FAA/TCCA type cert incl. Global 8000", loc:"Montreal, QC", badge:"Hot Target", color:"#c62828",
+      pitch:"Critical contact for Global 8000 EIS documentation sprint. Decision-maker on AMM/AFM/SRM authoring vendor selection. Search: 'Bombardier Director Certification Engineering' on LinkedIn." },
+    { name:"Director, Engineering Talent Acquisition", title:"Senior TA — Global & Challenger programmes", loc:"Montreal, QC", badge:"TA Entry", color:"#6b21a8",
+      pitch:"Primary contact for engineering partnerships. Lead with: Global 8000 EIS cert documentation and CATIA V5 structural stress delivery from India. Search: 'Bombardier Aerospace Talent Acquisition Montreal' on LinkedIn." },
+    { name:"Director, Bombardier Defense", title:"Leads BACN/HADES/Sentinel modification engineering", loc:"Wichita, KS", badge:"Defense", color:"#374151",
+      pitch:"Defense entry point for modification engineering and Learjet sustainment. Lead with: non-classified EWIS/IPC documentation and Learjet SB/AD authoring." },
+    { name:"India Engineering Lead — Bangalore CoE", title:"Leads ~120-engineer structural/CAD/CAM office", loc:"Bangalore, IN", badge:"India Bridge", color:"#f59e0b",
+      pitch:"Peer relationship: Cyient BIETC Hyderabad complements Bombardier Bangalore. Ask for introductions to Montreal CoE leadership. Search: 'Bombardier Aerospace Bangalore Engineering' on LinkedIn." }
+  ],
+
   outreachPlaybook: {
     badge: "Cold→Warm",
     headline: "Global 8000 ramp + Smart Router integration = engineering bandwidth gaps right now",
@@ -652,52 +681,10 @@ const BD_DATA = {
 <!-- ═══ KEY CONTACTS ═══ -->
 <div id="contacts" class="section">
   <div class="section-title">👥 Key Contacts — Outreach Map</div>
-  <div style="background:#fff3e0;border-radius:8px;padding:12px 16px;margin-bottom:20px;border-left:4px solid #ff9800;">
-    <div style="font-size:12px;color:#444;">⚠️ <strong>Contact intelligence note:</strong> Bombardier is a privately-held Canadian company (TSX: BBD.B) with less public TA visibility than US OEMs. Use LinkedIn to find current TA business partners. Key search terms: "Bombardier Aerospace Talent Acquisition Montreal," "Bombardier Recruiter," "Bombardier HR Business Partner Engineering." Also search the India engineering office: "Bombardier India Bangalore."</div>
+  <div style="background:#fff3e0;border-radius:8px;padding:12px 16px;margin-bottom:20px;border-left:4px solid #ff9800;font-size:12px;color:#444;">
+    ⚠️ <strong>Contact intelligence note:</strong> Bombardier is a Canadian private-listed company (TSX: BBD.B) with less public TA visibility than US OEMs. C-suite names (Éric Martel, Bart Demosky, Jean-Christophe Gallagher) are confirmed via public filings. VP/Director names must be verified on LinkedIn before outreach — search terms provided in each card.
   </div>
-
-  <div class="grid-2">
-    <div>
-      <div class="contact-card">
-        <div class="contact-name">Director, Engineering Talent Acquisition — Montreal QC</div>
-        <div class="contact-title">Senior TA leader for all engineering divisions including Global and Challenger programs</div>
-        <div class="contact-location"><span class="loc-ca">Montreal QC</span> · Search: "Bombardier Director Talent Acquisition Engineering"</div>
-        <div style="margin-top:8px;font-size:11px;color:#555;">Primary contact for Montreal engineering partnerships. Lead with: Global 8000 EIS certification documentation and CATIA V5 structural stress delivery from India.</div>
-      </div>
-      <div class="contact-card">
-        <div class="contact-name">VP, Engineering Operations (or CoE Lead) — Montreal QC</div>
-        <div class="contact-title">Owns engineering delivery model including India engagement strategy</div>
-        <div class="contact-location"><span class="loc-ca">Montreal QC</span> · Search: "Bombardier VP Engineering Operations"</div>
-        <div style="margin-top:8px;font-size:11px;color:#555;">Strategic decision-maker for offshore engineering partnerships. Entry point for BIETC Hyderabad proposal. Ask for intro via Bombardier Bangalore engineering office contacts.</div>
-      </div>
-      <div class="contact-card">
-        <div class="contact-name">Director, Certification Engineering — Montreal QC</div>
-        <div class="contact-title">Leads FAA/TCCA type certification programs including Global 8000</div>
-        <div class="contact-location"><span class="loc-ca">Montreal QC</span> · Search: "Bombardier Director Certification Engineering"</div>
-        <div style="margin-top:8px;font-size:11px;color:#555;">Critical contact for Global 8000 EIS documentation sprint. Decision-maker on AMM/AFM/SRM authoring vendor selection.</div>
-      </div>
-    </div>
-    <div>
-      <div class="contact-card">
-        <div class="contact-name">TCS Account Leader — Bombardier Account (Montreal)</div>
-        <div class="contact-title">TCS client partner for Bombardier SAP S/4HANA transformation</div>
-        <div class="contact-location"><span class="loc-ca">Montreal QC</span> · Search: "TCS Bombardier Account Director" on LinkedIn</div>
-        <div style="margin-top:8px;font-size:11px;color:#555;">Sub-contracting channel into TCS-led SAP program. Cyient angle: SAP aerospace manufacturing modules (PP/MM serial-number BOM, PM for MRO) that TCS generalists underserve.</div>
-      </div>
-      <div class="contact-card">
-        <div class="contact-name">Director, Bombardier Defense — Wichita KS</div>
-        <div class="contact-title">Leads BACN/HADES/Sentinel programs and modification engineering</div>
-        <div class="contact-location"><span class="loc-us">Wichita KS</span> · Search: "Bombardier Defense Wichita" or "Bombardier Defense Director"</div>
-        <div style="margin-top:8px;font-size:11px;color:#555;">Defense entry point for modification engineering and Learjet sustainment. Lead with: non-classified EWIS/IPC documentation and Learjet SB/AD authoring.</div>
-      </div>
-      <div class="contact-card">
-        <div class="contact-name">India Engineering Lead — Bangalore Office</div>
-        <div class="contact-title">Leads Bombardier's India engineering CoE (~120 engineers, structural/CAD/CAM)</div>
-        <div class="contact-location"><span class="loc-india">Bangalore IN</span> · Search: "Bombardier Aerospace Bangalore Engineering"</div>
-        <div style="margin-top:8px;font-size:11px;color:#555;">Peer relationship: Cyient BIETC Hyderabad is a natural complement to Bombardier's Bangalore office. Ask for introductions to Montreal CoE leadership via this contact.</div>
-      </div>
-    </div>
-  </div>
+  <div id="ct-cards" class="grid-2"></div>
 </div>
 
 <!-- ═══ INDIA STRATEGY ═══ -->
@@ -1003,6 +990,22 @@ const BD_DATA = {
 <script>
 // Populate dynamic data
 
+document.addEventListener('DOMContentLoaded', function() {
+
+  // ── Key Contacts ─────────────────────────────────────────────────────
+  if(BD_DATA.keyContacts && document.getElementById('ct-cards')) {
+    document.getElementById('ct-cards').innerHTML = BD_DATA.keyContacts.map(c => `
+      <div class="contact-card" style="border-left-color:${c.color};">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;">
+          <div class="contact-name">${c.name}</div>
+          <span style="background:${c.color};color:#fff;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;white-space:nowrap;">${c.badge}</span>
+        </div>
+        <div class="contact-title">${c.title}</div>
+        <div class="contact-location">📍 ${c.loc}</div>
+        <div style="margin-top:8px;background:#f8faff;border-radius:6px;padding:8px 10px;font-size:11px;color:#1a1a2e;line-height:1.6;">💬 ${c.pitch}</div>
+      </div>`).join('');
+  }
+
   // ── Outreach Playbook ────────────────────────────────────────────────
   const op = BD_DATA.outreachPlaybook;
   if(op && document.getElementById('op-headline')) {
@@ -1037,7 +1040,6 @@ const BD_DATA = {
       </div>`).join('');
   }
 
-document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('sb-refresh').textContent = BD_DATA.lastRefreshed;
   document.getElementById('kpi-rev').textContent  = '$' + BD_DATA.revenue + 'B';
   document.getElementById('kpi-rev-g').textContent = '▲ +' + BD_DATA.revenueGrowth + '% YoY';
